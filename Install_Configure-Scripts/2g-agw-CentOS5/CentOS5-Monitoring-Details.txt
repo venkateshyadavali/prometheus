@@ -1,0 +1,42 @@
+Node Exporter:
+-> Version used for installation on CentOS 5
+node_exporter-0.18.1.linux-386.tar.gz
+https://github.com/prometheus/node_exporter/releases/download/v0.18.1/node_exporter-0.18.1.linux-386.tar.gz
+
+To try if the latest version 1.0.1 works on CentOS 5
+https://github.com/prometheus/node_exporter/releases/download/v1.0.1/node_exporter-1.0.1.linux-386.tar.gz
+
+[root@ggw:agt bin]$ node_exporter --version
+node_exporter, version 0.18.1 (branch: HEAD, revision: 3db77732e925c08f675d7404a8c46466b2ece83e)
+  build user:       root@b50852a1acba
+  build date:       20190604-16:41:43
+  go version:       go1.12.5
+[root@ggw:agt bin]$
+
+-> Running as a service under system V init 
+The script/file etc_init.d_node_exporter to the path /etc/init.d/node_exporter
+
+Refer procedure to initialize service using 'system V init' in the below URL
+https://www.digitalocean.com/community/tutorials/how-to-configure-a-linux-service-to-start-automatically-after-a-crash-or-reboot-part-1-practical-examples
+===================
+Process/Service Monitoring:
+-> prom_proc_mon.sh
+  script to monitor processes. Limitation: If there are multiple instances of same process, it would show process is running even if one process is down.
+
+-> service_mon_prom.sh
+  script to monitor services running under 'system V init' and pushing the metrics to pushgateway.
+
+-> Set cron jobs as below
+* * * * * /home/altoUser/prom_proc_mon.sh >/dev/null 2>&1
+* * * * * /home/altouser/service_mon_prom.sh >/dev/null 2>&1
+
+-> Set cronjobs in database so that they persist upon reboots [Specific to agw]
+/usr/bin/mysql -h localhost -u omcadmin
+mysql> use aomDB;
+mysql> select * from CronJobs;
+mysql> INSERT INTO `CronJobs` VALUES ('CronJobs.30','Process Monitoring','Schedule','*','*','*','*','*','/home/altoUser/prom_proc_mon.sh','root');
+mysql> INSERT INTO `CronJobs` VALUES ('CronJobs.31','Service Monitoring','Schedule','*','*','*','*','*','/home/altoUser/service_mon_prom.sh','root');
+
+===================
+Issues:
+
