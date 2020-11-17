@@ -1,8 +1,8 @@
 #!/bin/bash
 PUSHGATEWAY_VERSION="1.3.0"
 wget https://github.com/prometheus/pushgateway/releases/download/v${PUSHGATEWAY_VERSION}/pushgateway-${PUSHGATEWAY_VERSION}.linux-amd64.tar.gz
-tar -xzvf prometheus-${PUSHGATEWAY_VERSION}.linux-amd64.tar.gz
-cd prometheus-${PUSHGATEWAY_VERSION}.linux-amd64/
+tar -xzvf pushgateway-${PUSHGATEWAY_VERSION}.linux-amd64.tar.gz
+cd pushgateway-${PUSHGATEWAY_VERSION}.linux-amd64/
 
 # create user
 useradd --no-create-home --shell /bin/false pushgateway
