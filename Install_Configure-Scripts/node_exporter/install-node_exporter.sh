@@ -3,6 +3,12 @@ NODE_EXPORTER_VERSION="1.0.1"
 wget https://github.com/prometheus/node_exporter/releases/download/v${NODE_EXPORTER_VERSION}/node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64.tar.gz
 tar -xzvf node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64.tar.gz
 cd node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64
+
+#i386 version of node_exporter on CentOS 5
+#wget https://github.com/prometheus/blackbox_exporter/releases/download/v${NODE_EXPORTER_VERSION}/blackbox_exporter-${NODE_EXPORTER_VERSION}.linux-386.tar.gz 
+#tar -zxvf node_exporter-${NODE_EXPORTER_VERSION}.linux-386.tar.gz
+#cd node_exporter-${NODE_EXPORTER_VERSION}.linux-386 
+
 cp node_exporter /usr/local/bin
 
 # create user

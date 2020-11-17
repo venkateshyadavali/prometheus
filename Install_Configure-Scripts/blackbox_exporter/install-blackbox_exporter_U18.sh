@@ -1,5 +1,6 @@
 #!/bin/bash
 # Installing and running blackbox as a service on Ubuntu 18.04 server
+# Releases of blackbox_exporter can be found in https://github.com/prometheus/blackbox_exporter/releases
 BLACKBOX_VERSION="0.18.0"
 wget https://github.com/prometheus/blackbox_exporter/releases/download/v${BLACKBOX_VERSION}/blackbox_exporter-${BLACKBOX_VERSION}.linux-amd64.tar.gz
 tar -xzvf blackbox_exporter-${BLACKBOX_VERSION}.linux-amd64.tar.gz
