@@ -1,0 +1,155 @@
+#Alert Rules for 2g-agw application on CentOS 5
+groups:
+- name: system-&-resources
+  rules:
+
+# Alert for any instance that is unreachable for >5 minutes.
+# 2g-agw specific configuration
+  - alert: InstanceDown
+    expr: up{instance="2g-agw:9100",job="node_exporter"} == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Jakarta-Lab: Instance {{ $labels.instance }} down"
+      description: "{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 5 minutes. There is a possibility that node is up, but the node_exporter process is not exposing data to prometheus."
+
+# Alert when CPU Load is greater than 80% for 5min
+  - alert: HighCpuLoad
+    expr: 100 - (avg by(instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+    for: 1m
+    labels:
+      severity: info
+    annotations:
+      summary: "Jakarta-Lab: Host high CPU load (instance {{ $labels.instance }})"
+      description: "CPU load is > 80%\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"
+
+# Alert when Disk Space usage is greater than 80%
+  - alert: HostOutOfDiskSpace
+#    expr: (node_filesystem_avail_bytes{mountpoint="/rootfs"}  * 100) / node_filesystem_size_bytes{mountpoint="/rootfs"} < 10
+#    expr: (node_filesystem_avail_bytes{mountpoint="/"}  * 100) / node_filesystem_size_bytes{mountpoint="/"} or (node_filesystem_avail_bytes{mountpoint="/run"}  * 100) / node_filesystem_size_bytes{mountpoint="/run"} < 10
+    expr: (node_filesystem_avail_bytes * 100) / node_filesystem_size_bytes < 20
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Jakarta-Lab: Host out of disk space (instance {{ $labels.instance }})"
+      description: "Disk is almost full (< 10% left)\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"
+
+# Alert when Memory Usage is greater than 90%
+# CentOS 5 Specific
+  - alert: HostOutOfMemory
+    expr: ((node_memory_MemTotal_bytes{instance="2g-agw:9100"} - node_memory_MemFree_bytes{instance="2g-agw:9100"}) / (node_memory_MemTotal_bytes{instance="2g-agw:9100"} )) * 100 > 90
+    for: 1m
+    labels:
+      severity: info
+    annotations:
+      summary: "Jakarta-Lab: Host out of memory (instance {{ $labels.instance }})"
+      description: "Node memory is filling up (< 10% left)\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"
+
+# Alert when Swap space Usage is greater than 80%
+  - alert: HostSwapIsFillingUp
+    expr: (1 - (node_memory_SwapFree_bytes / node_memory_SwapTotal_bytes)) * 100 > 80
+    for: 1m
+    labels:
+      severity: info
+    annotations:
+      summary: "Jakarta-Lab: Host swap is filling up (instance {{ $labels.instance }})"
+      description: "Swap is filling up (>80%)\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"
+
+- name: Network-Check
+  rules:
+# Alert when Node Network Interface is down for 5 minutes
+# {{interface}} - Operational state UP          node_network_up{operstate="up",instance="$node",job="$job"}
+  - alert: NodeNetworkInterface
+    expr: (node_network_up{device!~"lo|sit0"}) == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Jakarta-Lab: Network interface {{ $labels.device }} is down on (instance {{ $labels.instance }})"
+
+# Alert when Physical link state is down for 5 minutes
+# {{device}} - Physical link state                      node_network_carrier{instance="$node",job="$job"}
+  - alert: NodeNetworkDevice
+    expr: (node_network_carrier) == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Jakarta-Lab: Network Device/Carrier {{ $labels.device }} is down on (instance {{ $labels.instance }})"
+
+# Alert when Node Network Interface has changed states (up/down) more than twice in last 2 minutes
+#  - alert: NodeNetworkInterfaceFlapping
+#    expr: changes(node_network_up{device!~"veth.+"}[2m]) > 2
+#    expr: |
+#      changes(node_network_up{device!~"veth.+"}[2m]) > 2
+#    for: 2m
+#    labels:
+#      severity: warning
+#    annotations:
+#      summary: "Network interface "{{ $labels.device }}" changing it's up status often on node-exporter "
+
+# Alert when redis service is down on VMS
+#  - alert: Monitor redis-server status
+#    expr: node_systemd_unit_state{name="redis-server.service",state="active"} == 0
+#    for: 1m
+#    labels:
+#      severity: warning
+#    annotations:
+#      summary: "{{ $labels.name }} service is not active on (instance {{ $labels.instance }})"
+
+## Host SystemD service crashed
+#  - alert: HostSystemdServiceCrashed
+#    expr: node_systemd_unit_state{state="failed"} == 1
+#    for: 5m
+#    labels:
+#      severity: warning
+#    annotations:
+#      summary: "Host SystemD service crashed (instance {{ $labels.instance }})"
+#      description: "SystemD service crashed\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"
+
+- name: IMCP-TCP Check
+  rules:
+#  - alert: BlackboxProbeFailed
+  - alert: PingFailed
+    expr: probe_success == 0
+    for: 1m
+    labels:
+      severity: warning
+    annotations:
+      #summary: "ICMP Ping failed from Prometheus Server to instance {{ $labels.instance }}"
+      summary: "Jakarta-Lab: ICMP Ping failed to instance \"{{ $labels.instance }}\" from {{ $labels.job }}"
+      description: "Probe failed\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"
+  - alert: SlowPing
+    expr: avg_over_time(probe_icmp_duration_seconds[1m]) > 1
+    for: 1m
+    labels:
+      severity: info
+    annotations:
+      summary: "Jakarta-Lab: Slow ping to instance {{ $labels.instance }}"
+      description: "Ping took more than 1s\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"
+
+- name: TimeDrift
+  rules:
+  - alert: System Time not in sync 
+    expr: abs(scalar(node_time_seconds{instance="2g-agw:9100"}) - node_time_seconds{instance="localhost:9100",job="node_exporter"}) > 60
+    for: 1m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Jakarta-Lab: Time is not in Sync {{ $labels.instance }}"
+      description: "Time drift/difference of more than 10 seconds is noticed between the System Times of prometheus server and {{ $labels.instance }}."
+
+- name: pod-status-from-log-2g-agw
+  rules:
+
+# Alert when any of the agw services defined to run under system V init are not running for 1min
+  - alert: POD-Link-Down
+    expr: pod_status == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Jakarta-Lab: POD {{ $labels.RGWID }} - Link Down"
+      description: "POD {{ $labels.RGWID }} Link is down as per the logs in /audit/open/. OP field in the log is {{ $labels.OP }}"

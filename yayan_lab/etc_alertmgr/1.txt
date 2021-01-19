@@ -1,0 +1,620 @@
+08:34:01.373153 IP prometheus.ssh > 192.168.100.6.62350: Flags [P.], seq 920855860:920855988, ack 3528587721, win 501, length 128
+08:34:01.373238 IP prometheus.ssh > 192.168.100.6.62350: Flags [P.], seq 128:192, ack 1, win 501, length 64
+08:34:01.373326 IP prometheus.ssh > 192.168.100.6.62350: Flags [P.], seq 192:336, ack 1, win 501, length 144
+08:34:01.373406 IP prometheus.ssh > 192.168.100.6.62350: Flags [P.], seq 336:400, ack 1, win 501, length 64
+08:34:01.373445 IP 192.168.100.6.62350 > prometheus.ssh: Flags [.], ack 192, win 255, length 0
+08:34:01.373823 IP 192.168.100.6.62350 > prometheus.ssh: Flags [.], ack 400, win 254, length 0
+08:34:02.175046 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [P.], seq 1040708865:1040709107, ack 1239934135, win 512, options [nop,nop,TS val 1606319571 ecr 1606314712], length 242
+08:34:02.175068 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [.], ack 242, win 3075, options [nop,nop,TS val 1606319571 ecr 1606319571], length 0
+08:34:02.191252 IP localhost.localdomain.39684 > localhost.localdomain.ntp: NTPv4, Client, length 48
+08:34:02.191270 IP localhost.localdomain > localhost.localdomain: ICMP localhost.localdomain udp port ntp unreachable, length 84
+08:34:02.316074 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 1:4097, ack 242, win 3075, options [nop,nop,TS val 1606319712 ecr 1606319571], length 4096
+08:34:02.316098 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 4097, win 493, options [nop,nop,TS val 1606319712 ecr 1606319712], length 0
+08:34:02.316452 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 4097:8193, ack 242, win 3075, options [nop,nop,TS val 1606319712 ecr 1606319712], length 4096
+08:34:02.316461 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 8193, win 493, options [nop,nop,TS val 1606319712 ecr 1606319712], length 0
+08:34:02.317097 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 8193:12289, ack 242, win 3075, options [nop,nop,TS val 1606319713 ecr 1606319712], length 4096
+08:34:02.317107 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 12289, win 493, options [nop,nop,TS val 1606319713 ecr 1606319713], length 0
+08:34:02.317710 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 12289:14174, ack 242, win 3075, options [nop,nop,TS val 1606319713 ecr 1606319713], length 1885
+08:34:02.317719 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 14174, win 502, options [nop,nop,TS val 1606319713 ecr 1606319713], length 0
+08:34:02.402844 IP localhost.localdomain.47598 > localhost.domain: 51591+ [1au] PTR? 6.100.168.192.in-addr.arpa. (55)
+08:34:02.403132 IP prometheus.60140 > dns.google.domain: 18680+ [1au] PTR? 6.100.168.192.in-addr.arpa. (55)
+08:34:02.408857 IP dns.google.domain > prometheus.60140: 18680 ServFail 0/0/1 (55)
+08:34:02.408935 IP prometheus.60140 > dns.google.domain: 18680+ PTR? 6.100.168.192.in-addr.arpa. (44)
+08:34:02.413515 IP dns.google.domain > prometheus.60140: 18680 ServFail 0/0/0 (44)
+08:34:02.413624 IP prometheus.58144 > dns.google.domain: 18680+ [1au] PTR? 6.100.168.192.in-addr.arpa. (55)
+08:34:02.418480 IP dns.google.domain > prometheus.58144: 18680 ServFail 0/0/1 (55)
+08:34:02.418536 IP prometheus.58144 > dns.google.domain: 18680+ PTR? 6.100.168.192.in-addr.arpa. (44)
+08:34:02.422604 IP dns.google.domain > prometheus.58144: 18680 ServFail 0/0/0 (44)
+08:34:02.422854 IP localhost.domain > localhost.localdomain.47598: 51591 ServFail 0/0/1 (55)
+08:34:02.422922 IP localhost.localdomain.60326 > localhost.domain: 51591+ [1au] PTR? 6.100.168.192.in-addr.arpa. (55)
+08:34:02.423247 IP localhost.domain > localhost.localdomain.60326: 51591 ServFail 0/0/1 (55)
+08:34:02.423348 IP localhost.localdomain.41418 > localhost.domain: 60339+ [1au] PTR? 35.100.168.192.in-addr.arpa. (56)
+08:34:02.423555 IP prometheus.34494 > dns.google.domain: 40302+ [1au] PTR? 35.100.168.192.in-addr.arpa. (56)
+08:34:02.428235 IP dns.google.domain > prometheus.34494: 40302 ServFail 0/0/1 (56)
+08:34:02.428309 IP prometheus.34494 > dns.google.domain: 40302+ PTR? 35.100.168.192.in-addr.arpa. (45)
+08:34:02.432519 IP dns.google.domain > prometheus.34494: 40302 ServFail 0/0/0 (45)
+08:34:02.432656 IP prometheus.53141 > dns.google.domain: 40302+ [1au] PTR? 35.100.168.192.in-addr.arpa. (56)
+08:34:02.437853 IP dns.google.domain > prometheus.53141: 40302 ServFail 0/0/1 (56)
+08:34:02.437919 IP prometheus.53141 > dns.google.domain: 40302+ PTR? 35.100.168.192.in-addr.arpa. (45)
+08:34:02.443283 IP dns.google.domain > prometheus.53141: 40302 ServFail 0/0/0 (45)
+08:34:02.443552 IP localhost.domain > localhost.localdomain.41418: 60339 2/0/1 PTR prometheus., PTR prometheus.local. (110)
+08:34:02.507244 IP prometheus.42874 > 2g-agw.9100: Flags [P.], seq 1070457640:1070457879, ack 2413210788, win 501, options [nop,nop,TS val 2104939654 ecr 25910586], length 239
+08:34:02.521631 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 1:2897, ack 239, win 2405, options [nop,nop,TS val 25915587 ecr 2104939654], length 2896
+08:34:02.521658 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 2897, win 496, options [nop,nop,TS val 2104939668 ecr 25915587], length 0
+08:34:02.521670 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 2897:4097, ack 239, win 2405, options [nop,nop,TS val 25915587 ecr 2104939654], length 1200
+08:34:02.521679 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 4097, win 489, options [nop,nop,TS val 2104939668 ecr 25915587], length 0
+08:34:02.521754 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 4097:6993, ack 239, win 2405, options [nop,nop,TS val 25915587 ecr 2104939668], length 2896
+08:34:02.521765 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 6993, win 474, options [nop,nop,TS val 2104939668 ecr 25915587], length 0
+08:34:02.521784 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 6993:7914, ack 239, win 2405, options [nop,nop,TS val 25915587 ecr 2104939668], length 921
+08:34:02.521790 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 7914, win 467, options [nop,nop,TS val 2104939668 ecr 25915587], length 0
+08:34:02.619347 IP 2g-agw.9115 > prometheus.39634: Flags [P.], seq 1564154052:1564154613, ack 3352560101, win 501, options [nop,nop,TS val 25915685 ecr 2104930264], length 561
+08:34:02.619375 IP prometheus.39634 > 2g-agw.9115: Flags [.], ack 561, win 501, options [nop,nop,TS val 2104939766 ecr 25915685], length 0
+08:34:02.978292 IP 192.168.100.30.37314 > prometheus.9091: Flags [S], seq 1861810034, win 5840, options [mss 1460,sackOK,TS val 25916044 ecr 0,nop,wscale 7], length 0
+08:34:02.978339 IP prometheus.9091 > 192.168.100.30.37314: Flags [S.], seq 67032996, ack 1861810035, win 65160, options [mss 1460,sackOK,TS val 1104290200 ecr 25916044,nop,wscale 7], length 0
+08:34:02.978441 IP 192.168.100.30.37314 > prometheus.9091: Flags [.], ack 1, win 46, options [nop,nop,TS val 25916044 ecr 1104290200], length 0
+08:34:02.978477 IP 192.168.100.30.37314 > prometheus.9091: Flags [P.], seq 1:625, ack 1, win 46, options [nop,nop,TS val 25916044 ecr 1104290200], length 624
+08:34:02.978488 IP prometheus.9091 > 192.168.100.30.37314: Flags [.], ack 625, win 505, options [nop,nop,TS val 1104290200 ecr 25916044], length 0
+08:34:02.980617 IP prometheus.9091 > 192.168.100.30.37314: Flags [P.], seq 1:76, ack 625, win 505, options [nop,nop,TS val 1104290202 ecr 25916044], length 75
+08:34:02.980670 IP 192.168.100.30.37314 > prometheus.9091: Flags [.], ack 76, win 46, options [nop,nop,TS val 25916046 ecr 1104290202], length 0
+08:34:02.980846 IP 192.168.100.30.37314 > prometheus.9091: Flags [F.], seq 625, ack 76, win 46, options [nop,nop,TS val 25916046 ecr 1104290202], length 0
+08:34:02.980926 IP prometheus.9091 > 192.168.100.30.37314: Flags [F.], seq 76, ack 626, win 505, options [nop,nop,TS val 1104290202 ecr 25916046], length 0
+08:34:02.980977 IP 192.168.100.30.37314 > prometheus.9091: Flags [.], ack 77, win 46, options [nop,nop,TS val 25916046 ecr 1104290202], length 0
+08:34:03.426393 IP localhost.localdomain.52898 > localhost.domain: 13771+ [1au] PTR? 53.0.0.127.in-addr.arpa. (52)
+08:34:03.426570 IP localhost.domain > localhost.localdomain.52898: 13771 1/0/1 PTR localhost. (75)
+08:34:03.426732 IP localhost.localdomain.57579 > localhost.domain: 53387+ [1au] PTR? 4.4.8.8.in-addr.arpa. (49)
+08:34:03.426973 IP prometheus.56097 > dns.google.domain: 54548+ [1au] PTR? 4.4.8.8.in-addr.arpa. (49)
+08:34:03.488357 IP6 localhost6.localdomain6.54732 > localhost6.localdomain6.9090: Flags [P.], seq 158673238:158673481, ack 3781101240, win 512, options [nop,nop,TS val 1606320884 ecr 1606305893], length 243
+08:34:03.497091 IP6 localhost6.localdomain6.9090 > localhost6.localdomain6.54732: Flags [P.], seq 1:4097, ack 243, win 3075, options [nop,nop,TS val 1606320893 ecr 1606320884], length 4096
+08:34:03.497112 IP6 localhost6.localdomain6.54732 > localhost6.localdomain6.9090: Flags [.], ack 4097, win 493, options [nop,nop,TS val 1606320893 ecr 1606320893], length 0
+08:34:03.497286 IP6 localhost6.localdomain6.9090 > localhost6.localdomain6.54732: Flags [P.], seq 4097:8193, ack 243, win 3075, options [nop,nop,TS val 1606320893 ecr 1606320893], length 4096
+08:34:03.497299 IP6 localhost6.localdomain6.54732 > localhost6.localdomain6.9090: Flags [.], ack 8193, win 473, options [nop,nop,TS val 1606320893 ecr 1606320893], length 0
+08:34:03.497390 IP6 localhost6.localdomain6.9090 > localhost6.localdomain6.54732: Flags [P.], seq 8193:9647, ack 243, win 3075, options [nop,nop,TS val 1606320893 ecr 1606320893], length 1454
+08:34:03.497398 IP6 localhost6.localdomain6.54732 > localhost6.localdomain6.9090: Flags [.], ack 9647, win 464, options [nop,nop,TS val 1606320893 ecr 1606320893], length 0
+08:34:03.706253 IP dns.google.domain > prometheus.56097: 54548 1/0/1 PTR dns.google. (73)
+08:34:03.706491 IP localhost.domain > localhost.localdomain.57579: 53387 1/0/1 PTR dns.google. (73)
+08:34:03.706688 IP localhost.localdomain.44531 > localhost.domain: 24104+ [1au] PTR? 8.8.8.8.in-addr.arpa. (49)
+08:34:03.706990 IP prometheus.36443 > dns.google.domain: 48545+ [1au] PTR? 8.8.8.8.in-addr.arpa. (49)
+08:34:03.711847 IP dns.google.domain > prometheus.36443: 48545 1/0/1 PTR dns.google. (73)
+08:34:03.711997 IP localhost.domain > localhost.localdomain.44531: 24104 1/0/1 PTR dns.google. (73)
+08:34:03.712406 IP localhost.localdomain.52539 > localhost.domain: 63521+ [1au] PTR? 30.100.168.192.in-addr.arpa. (56)
+08:34:03.712643 IP prometheus.39323 > dns.google.domain: 28250+ [1au] PTR? 30.100.168.192.in-addr.arpa. (56)
+08:34:03.716829 IP dns.google.domain > prometheus.39323: 28250 ServFail 0/0/1 (56)
+08:34:03.716913 IP prometheus.39323 > dns.google.domain: 28250+ PTR? 30.100.168.192.in-addr.arpa. (45)
+08:34:03.721336 IP dns.google.domain > prometheus.39323: 28250 ServFail 0/0/0 (45)
+08:34:03.721452 IP prometheus.57218 > dns.google.domain: 28250+ [1au] PTR? 30.100.168.192.in-addr.arpa. (56)
+08:34:03.726291 IP dns.google.domain > prometheus.57218: 28250 ServFail 0/0/1 (56)
+08:34:03.726351 IP prometheus.57218 > dns.google.domain: 28250+ PTR? 30.100.168.192.in-addr.arpa. (45)
+08:34:03.730726 IP dns.google.domain > prometheus.57218: 28250 ServFail 0/0/0 (45)
+08:34:03.730983 IP localhost.domain > localhost.localdomain.52539: 63521 ServFail 0/0/1 (56)
+08:34:03.731034 IP localhost.localdomain.36927 > localhost.domain: 63521+ [1au] PTR? 30.100.168.192.in-addr.arpa. (56)
+08:34:03.731352 IP localhost.domain > localhost.localdomain.36927: 63521 ServFail 0/0/1 (56)
+08:34:03.810249 IP localhost.localdomain.41500 > localhost.localdomain.9090: Flags [.], ack 4128184139, win 512, options [nop,nop,TS val 2450755184 ecr 2450740080], length 0
+08:34:03.810256 IP localhost.localdomain.9090 > localhost.localdomain.41500: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450755184 ecr 2450740080], length 0
+08:34:03.810284 IP localhost.localdomain.9090 > localhost.localdomain.41500: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450755184 ecr 2450740080], length 0
+08:34:03.810290 IP localhost.localdomain.41500 > localhost.localdomain.9090: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450755184 ecr 2450740080], length 0
+08:34:04.322232 IP prometheus.58458 > 52.98.42.162.https: Flags [.], ack 410782957, win 501, length 0
+08:34:04.339535 IP 52.98.42.162.https > prometheus.58458: Flags [.], ack 1, win 2047, length 0
+08:34:04.450732 IP localhost.localdomain.47263 > localhost.domain: 49101+ [1au] PTR? 162.42.98.52.in-addr.arpa. (54)
+08:34:04.451022 IP prometheus.53700 > dns.google.domain: 30566+ [1au] PTR? 162.42.98.52.in-addr.arpa. (54)
+08:34:04.480186 IP dns.google.domain > prometheus.53700: 30566 1/1/1 A 36.86.63.182 (156)
+08:34:04.480353 IP localhost.domain > localhost.localdomain.47263: 49101 0/0/1 (54)
+08:34:04.576415 IP 2g-agw.9115 > prometheus.39632: Flags [P.], seq 1558824084:1558824645, ack 2349051363, win 501, options [nop,nop,TS val 25917642 ecr 2104932221], length 561
+08:34:04.576443 IP prometheus.39632 > 2g-agw.9115: Flags [.], ack 561, win 501, options [nop,nop,TS val 2104941723 ecr 25917642], length 0
+08:34:05.602467 IP localhost.localdomain.55198 > localhost.localdomain.9115: Flags [.], ack 3663208913, win 512, options [nop,nop,TS val 2450756976 ecr 2450741812], length 0
+08:34:05.602474 IP localhost.localdomain.9115 > localhost.localdomain.55198: Flags [.], ack 1, win 1475, options [nop,nop,TS val 2450756976 ecr 2450741812], length 0
+08:34:05.602503 IP localhost.localdomain.9115 > localhost.localdomain.55198: Flags [.], ack 1, win 1475, options [nop,nop,TS val 2450756976 ecr 2450741812], length 0
+08:34:05.602509 IP localhost.localdomain.55198 > localhost.localdomain.9115: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450756976 ecr 2450741812], length 0
+08:34:06.021367 IP 192.168.100.30.37315 > prometheus.9091: Flags [S], seq 1878492941, win 5840, options [mss 1460,sackOK,TS val 25919087 ecr 0,nop,wscale 7], length 0
+08:34:06.021410 IP prometheus.9091 > 192.168.100.30.37315: Flags [S.], seq 2245030636, ack 1878492942, win 65160, options [mss 1460,sackOK,TS val 1104293243 ecr 25919087,nop,wscale 7], length 0
+08:34:06.021689 IP 192.168.100.30.37315 > prometheus.9091: Flags [.], ack 1, win 46, options [nop,nop,TS val 25919087 ecr 1104293243], length 0
+08:34:06.021729 IP 192.168.100.30.37315 > prometheus.9091: Flags [P.], seq 1:843, ack 1, win 46, options [nop,nop,TS val 25919087 ecr 1104293243], length 842
+08:34:06.021742 IP prometheus.9091 > 192.168.100.30.37315: Flags [.], ack 843, win 503, options [nop,nop,TS val 1104293243 ecr 25919087], length 0
+08:34:06.024181 IP prometheus.9091 > 192.168.100.30.37315: Flags [P.], seq 1:76, ack 843, win 503, options [nop,nop,TS val 1104293246 ecr 25919087], length 75
+08:34:06.024302 IP 192.168.100.30.37315 > prometheus.9091: Flags [.], ack 76, win 46, options [nop,nop,TS val 25919090 ecr 1104293246], length 0
+08:34:06.024525 IP 192.168.100.30.37315 > prometheus.9091: Flags [F.], seq 843, ack 76, win 46, options [nop,nop,TS val 25919090 ecr 1104293246], length 0
+08:34:06.024616 IP prometheus.9091 > 192.168.100.30.37315: Flags [F.], seq 76, ack 844, win 503, options [nop,nop,TS val 1104293246 ecr 25919090], length 0
+08:34:06.024685 IP 192.168.100.30.37315 > prometheus.9091: Flags [.], ack 77, win 46, options [nop,nop,TS val 25919090 ecr 1104293246], length 0
+08:34:06.544240 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:06.626309 ARP, Request who-has 192.168.100.6 tell prometheus, length 28
+08:34:06.626689 ARP, Reply 192.168.100.6 is-at b4:99:ba:e0:d2:79 (oui Unknown), length 46
+08:34:07.175036 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [P.], seq 242:484, ack 14174, win 512, options [nop,nop,TS val 1606324570 ecr 1606319713], length 242
+08:34:07.175060 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [.], ack 484, win 3075, options [nop,nop,TS val 1606324570 ecr 1606324570], length 0
+08:34:07.184697 IP localhost.localdomain.57431 > localhost.localdomain.ntp: NTPv4, Client, length 48
+08:34:07.184715 IP localhost.localdomain > localhost.localdomain: ICMP localhost.localdomain udp port ntp unreachable, length 84
+08:34:07.313201 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 14174:18270, ack 484, win 3075, options [nop,nop,TS val 1606324709 ecr 1606324570], length 4096
+08:34:07.313222 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 18270, win 493, options [nop,nop,TS val 1606324709 ecr 1606324709], length 0
+08:34:07.313505 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 18270:22366, ack 484, win 3075, options [nop,nop,TS val 1606324709 ecr 1606324709], length 4096
+08:34:07.313512 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 22366, win 493, options [nop,nop,TS val 1606324709 ecr 1606324709], length 0
+08:34:07.313920 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 22366:26462, ack 484, win 3075, options [nop,nop,TS val 1606324709 ecr 1606324709], length 4096
+08:34:07.313927 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 26462, win 493, options [nop,nop,TS val 1606324709 ecr 1606324709], length 0
+08:34:07.314306 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 26462:28355, ack 484, win 3075, options [nop,nop,TS val 1606324710 ecr 1606324709], length 1893
+08:34:07.314312 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 28355, win 502, options [nop,nop,TS val 1606324710 ecr 1606324710], length 0
+08:34:07.400532 ARP, Request who-has prometheus tell _gateway, length 46
+08:34:07.400552 ARP, Reply prometheus is-at 00:0c:29:26:5a:54 (oui Unknown), length 28
+08:34:07.507278 IP prometheus.42874 > 2g-agw.9100: Flags [P.], seq 239:478, ack 7914, win 501, options [nop,nop,TS val 2104944654 ecr 25915587], length 239
+08:34:07.522616 IP localhost.localdomain.58656 > localhost.domain: 61586+ [1au] PTR? 28.100.168.192.in-addr.arpa. (56)
+08:34:07.522922 IP prometheus.34147 > dns.google.domain: 63473+ [1au] PTR? 28.100.168.192.in-addr.arpa. (56)
+08:34:07.528512 IP dns.google.domain > prometheus.34147: 63473 ServFail 0/0/1 (56)
+08:34:07.528612 IP prometheus.34147 > dns.google.domain: 63473+ PTR? 28.100.168.192.in-addr.arpa. (45)
+08:34:07.531352 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 7914:10810, ack 478, win 2405, options [nop,nop,TS val 25920597 ecr 2104944654], length 2896
+08:34:07.531381 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 10810, win 496, options [nop,nop,TS val 2104944678 ecr 25920597], length 0
+08:34:07.531390 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 10810:12010, ack 478, win 2405, options [nop,nop,TS val 25920597 ecr 2104944654], length 1200
+08:34:07.531398 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 12010, win 489, options [nop,nop,TS val 2104944678 ecr 25920597], length 0
+08:34:07.531569 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 12010:14906, ack 478, win 2405, options [nop,nop,TS val 25920597 ecr 2104944678], length 2896
+08:34:07.531581 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 14906, win 496, options [nop,nop,TS val 2104944678 ecr 25920597], length 0
+08:34:07.531607 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 14906:15827, ack 478, win 2405, options [nop,nop,TS val 25920597 ecr 2104944678], length 921
+08:34:07.531613 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 15827, win 489, options [nop,nop,TS val 2104944678 ecr 25920597], length 0
+08:34:07.532847 IP dns.google.domain > prometheus.34147: 63473 ServFail 0/0/0 (45)
+08:34:07.532998 IP prometheus.34449 > dns.google.domain: 63473+ [1au] PTR? 28.100.168.192.in-addr.arpa. (56)
+08:34:07.537994 IP dns.google.domain > prometheus.34449: 63473 ServFail 0/0/1 (56)
+08:34:07.538065 IP prometheus.34449 > dns.google.domain: 63473+ PTR? 28.100.168.192.in-addr.arpa. (45)
+08:34:07.542855 IP dns.google.domain > prometheus.34449: 63473 ServFail 0/0/0 (45)
+08:34:07.543144 IP localhost.domain > localhost.localdomain.58656: 61586 ServFail 0/0/1 (56)
+08:34:07.543207 IP localhost.localdomain.48934 > localhost.domain: 61586+ [1au] PTR? 28.100.168.192.in-addr.arpa. (56)
+08:34:07.543547 IP localhost.domain > localhost.localdomain.48934: 61586 ServFail 0/0/1 (56)
+08:34:07.543672 IP localhost.localdomain.40024 > localhost.domain: 29363+ [1au] PTR? 33.100.168.192.in-addr.arpa. (56)
+08:34:07.543802 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:07.543936 IP prometheus.36628 > dns.google.domain: 18012+ [1au] PTR? 33.100.168.192.in-addr.arpa. (56)
+08:34:07.548464 IP dns.google.domain > prometheus.36628: 18012 ServFail 0/0/1 (56)
+08:34:07.548548 IP prometheus.36628 > dns.google.domain: 18012+ PTR? 33.100.168.192.in-addr.arpa. (45)
+08:34:07.552749 IP dns.google.domain > prometheus.36628: 18012 ServFail 0/0/0 (45)
+08:34:07.552868 IP prometheus.35377 > dns.google.domain: 18012+ [1au] PTR? 33.100.168.192.in-addr.arpa. (56)
+08:34:07.557994 IP dns.google.domain > prometheus.35377: 18012 ServFail 0/0/1 (56)
+08:34:07.558060 IP prometheus.35377 > dns.google.domain: 18012+ PTR? 33.100.168.192.in-addr.arpa. (45)
+08:34:07.562681 IP dns.google.domain > prometheus.35377: 18012 ServFail 0/0/0 (45)
+08:34:07.563118 IP localhost.domain > localhost.localdomain.40024: 29363 ServFail 0/0/1 (56)
+08:34:07.563176 IP localhost.localdomain.42018 > localhost.domain: 29363+ [1au] PTR? 33.100.168.192.in-addr.arpa. (56)
+08:34:07.563503 IP localhost.domain > localhost.localdomain.42018: 29363 ServFail 0/0/1 (56)
+08:34:07.563794 IP localhost.localdomain.45440 > localhost.domain: 17809+ [1au] PTR? 1.100.168.192.in-addr.arpa. (55)
+08:34:07.564029 IP prometheus.49218 > dns.google.domain: 13855+ [1au] PTR? 1.100.168.192.in-addr.arpa. (55)
+08:34:07.569046 IP dns.google.domain > prometheus.49218: 13855 ServFail 0/0/1 (55)
+08:34:07.569132 IP prometheus.49218 > dns.google.domain: 13855+ PTR? 1.100.168.192.in-addr.arpa. (44)
+08:34:07.573364 IP dns.google.domain > prometheus.49218: 13855 ServFail 0/0/0 (44)
+08:34:07.573485 IP prometheus.44053 > dns.google.domain: 13855+ [1au] PTR? 1.100.168.192.in-addr.arpa. (55)
+08:34:07.578437 IP dns.google.domain > prometheus.44053: 13855 ServFail 0/0/1 (55)
+08:34:07.578512 IP prometheus.44053 > dns.google.domain: 13855+ PTR? 1.100.168.192.in-addr.arpa. (44)
+08:34:07.582631 IP dns.google.domain > prometheus.44053: 13855 ServFail 0/0/0 (44)
+08:34:07.582913 IP localhost.domain > localhost.localdomain.45440: 17809 1/0/1 PTR _gateway. (77)
+08:34:08.544326 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:08.823468 IP 2g-agw.4957 > 192.168.100.255.4957: UDP, length 143
+08:34:09.545985 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:09.570501 IP localhost.localdomain.50950 > localhost.domain: 6255+ [1au] PTR? 255.100.168.192.in-addr.arpa. (57)
+08:34:09.570807 IP prometheus.48072 > dns.google.domain: 32178+ [1au] PTR? 255.100.168.192.in-addr.arpa. (57)
+08:34:09.575784 IP dns.google.domain > prometheus.48072: 32178 ServFail 0/0/1 (57)
+08:34:09.575896 IP prometheus.48072 > dns.google.domain: 32178+ PTR? 255.100.168.192.in-addr.arpa. (46)
+08:34:09.580406 IP dns.google.domain > prometheus.48072: 32178 ServFail 0/0/0 (46)
+08:34:09.580559 IP prometheus.41107 > dns.google.domain: 32178+ [1au] PTR? 255.100.168.192.in-addr.arpa. (57)
+08:34:09.585149 IP dns.google.domain > prometheus.41107: 32178 ServFail 0/0/1 (57)
+08:34:09.585220 IP prometheus.41107 > dns.google.domain: 32178+ PTR? 255.100.168.192.in-addr.arpa. (46)
+08:34:09.589922 IP dns.google.domain > prometheus.41107: 32178 ServFail 0/0/0 (46)
+08:34:09.590232 IP localhost.domain > localhost.localdomain.50950: 6255 ServFail 0/0/1 (57)
+08:34:09.590293 IP localhost.localdomain.33257 > localhost.domain: 6255+ [1au] PTR? 255.100.168.192.in-addr.arpa. (57)
+08:34:09.590707 IP localhost.domain > localhost.localdomain.33257: 6255 ServFail 0/0/1 (57)
+08:34:10.210500 IP6 localhost6.localdomain6.55520 > localhost6.localdomain6.9093: Flags [.], ack 343537078, win 512, options [nop,nop,TS val 1606327606 ecr 1606312430], length 0
+08:34:10.210507 IP6 localhost6.localdomain6.9093 > localhost6.localdomain6.55520: Flags [.], ack 1, win 512, options [nop,nop,TS val 1606327606 ecr 1606312430], length 0
+08:34:10.210528 IP6 localhost6.localdomain6.9093 > localhost6.localdomain6.55520: Flags [.], ack 1, win 512, options [nop,nop,TS val 1606327606 ecr 1606312430], length 0
+08:34:10.210539 IP6 localhost6.localdomain6.55520 > localhost6.localdomain6.9093: Flags [.], ack 1, win 512, options [nop,nop,TS val 1606327606 ecr 1606312430], length 0
+08:34:10.545578 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:11.546279 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:12.175536 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [P.], seq 484:726, ack 28355, win 512, options [nop,nop,TS val 1606329571 ecr 1606324710], length 242
+08:34:12.175572 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [.], ack 726, win 3075, options [nop,nop,TS val 1606329571 ecr 1606329571], length 0
+08:34:12.202993 IP localhost.localdomain.54972 > localhost.localdomain.ntp: NTPv4, Client, length 48
+08:34:12.203012 IP localhost.localdomain > localhost.localdomain: ICMP localhost.localdomain udp port ntp unreachable, length 84
+08:34:12.321067 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 28355:32451, ack 726, win 3075, options [nop,nop,TS val 1606329716 ecr 1606329571], length 4096
+08:34:12.321087 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 32451, win 493, options [nop,nop,TS val 1606329716 ecr 1606329716], length 0
+08:34:12.321371 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 32451:36547, ack 726, win 3075, options [nop,nop,TS val 1606329717 ecr 1606329716], length 4096
+08:34:12.321378 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 36547, win 493, options [nop,nop,TS val 1606329717 ecr 1606329717], length 0
+08:34:12.321902 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 36547:40643, ack 726, win 3075, options [nop,nop,TS val 1606329717 ecr 1606329717], length 4096
+08:34:12.321910 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 40643, win 493, options [nop,nop,TS val 1606329717 ecr 1606329717], length 0
+08:34:12.322402 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 40643:42533, ack 726, win 3075, options [nop,nop,TS val 1606329718 ecr 1606329717], length 1890
+08:34:12.322411 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 42533, win 502, options [nop,nop,TS val 1606329718 ecr 1606329718], length 0
+08:34:12.507619 IP prometheus.42874 > 2g-agw.9100: Flags [P.], seq 478:717, ack 15827, win 501, options [nop,nop,TS val 2104949654 ecr 25920597], length 239
+08:34:12.530673 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 15827:18723, ack 717, win 2405, options [nop,nop,TS val 25925596 ecr 2104949654], length 2896
+08:34:12.530712 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 18723, win 496, options [nop,nop,TS val 2104949677 ecr 25925596], length 0
+08:34:12.530733 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 18723:19923, ack 717, win 2405, options [nop,nop,TS val 25925596 ecr 2104949654], length 1200
+08:34:12.530752 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 19923, win 489, options [nop,nop,TS val 2104949677 ecr 25925596], length 0
+08:34:12.530943 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 19923:22819, ack 717, win 2405, options [nop,nop,TS val 25925596 ecr 2104949677], length 2896
+08:34:12.530954 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 22819, win 496, options [nop,nop,TS val 2104949677 ecr 25925596], length 0
+08:34:12.530967 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 22819:23727, ack 717, win 2405, options [nop,nop,TS val 25925596 ecr 2104949677], length 908
+08:34:12.530973 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 23727, win 489, options [nop,nop,TS val 2104949677 ecr 25925596], length 0
+08:34:12.546576 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:12.770360 IP6 localhost6.localdomain6.43340 > localhost6.localdomain6.9091: Flags [.], ack 3716534693, win 512, options [nop,nop,TS val 1606330166 ecr 1606314931], length 0
+08:34:12.770365 IP6 localhost6.localdomain6.9091 > localhost6.localdomain6.43340: Flags [.], ack 1, win 1232, options [nop,nop,TS val 1606330166 ecr 1606314931], length 0
+08:34:12.770392 IP6 localhost6.localdomain6.9091 > localhost6.localdomain6.43340: Flags [.], ack 1, win 1232, options [nop,nop,TS val 1606330166 ecr 1606314931], length 0
+08:34:12.770398 IP6 localhost6.localdomain6.43340 > localhost6.localdomain6.9091: Flags [.], ack 1, win 512, options [nop,nop,TS val 1606330166 ecr 1606314931], length 0
+08:34:13.547175 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:13.901634 IP 192.168.100.6.62533 > prometheus.9090: Flags [S], seq 3524542635, win 8192, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+08:34:13.901679 IP prometheus.9090 > 192.168.100.6.62533: Flags [S.], seq 1122610937, ack 3524542636, win 64240, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+08:34:13.902000 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 1, win 256, length 0
+08:34:13.902306 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 1:473, ack 1, win 256, length 472
+08:34:13.902321 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], ack 473, win 501, length 0
+08:34:13.910899 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 1:4097, ack 473, win 501, length 4096
+08:34:13.910961 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 4097:11397, ack 473, win 501, length 7300
+08:34:13.910976 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 11397:14317, ack 473, win 501, length 2920
+08:34:13.911777 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 4097, win 256, length 0
+08:34:13.911795 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 14317:23077, ack 473, win 501, length 8760
+08:34:13.912613 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 14317, win 256, length 0
+08:34:13.912627 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 23077:24430, ack 473, win 501, length 1353
+08:34:13.913632 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 24430, win 251, length 0
+08:34:13.958647 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 473:968, ack 24430, win 251, length 495
+08:34:13.959038 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 24430:24542, ack 968, win 501, length 112
+08:34:13.959455 IP 192.168.100.6.62534 > prometheus.9090: Flags [S], seq 4169600561, win 8192, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+08:34:13.959477 IP prometheus.9090 > 192.168.100.6.62534: Flags [S.], seq 685480780, ack 4169600562, win 64240, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+08:34:13.959939 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 968:1457, ack 24542, win 256, length 489
+08:34:13.960297 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 24542:24654, ack 1457, win 501, length 112
+08:34:13.960596 IP 192.168.100.6.62534 > prometheus.9090: Flags [.], ack 1, win 256, length 0
+08:34:13.961039 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 1457:1965, ack 24654, win 256, length 508
+08:34:13.961173 IP 192.168.100.6.62534 > prometheus.9090: Flags [P.], seq 1:479, ack 1, win 256, length 478
+08:34:13.961185 IP prometheus.9090 > 192.168.100.6.62534: Flags [.], ack 479, win 501, length 0
+08:34:13.961271 IP 192.168.100.6.62535 > prometheus.9090: Flags [S], seq 2214535918, win 8192, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+08:34:13.961363 IP prometheus.9090 > 192.168.100.6.62535: Flags [S.], seq 2681129759, ack 2214535919, win 64240, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+08:34:13.961519 IP 192.168.100.6.62535 > prometheus.9090: Flags [.], ack 1, win 256, length 0
+08:34:13.961681 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 24654:24766, ack 1965, win 501, length 112
+08:34:13.962467 IP prometheus.9090 > 192.168.100.6.62534: Flags [P.], seq 1:113, ack 479, win 501, length 112
+08:34:14.158845 IP 192.168.100.6.62534 > prometheus.9090: Flags [.], ack 113, win 256, length 0
+08:34:14.158858 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 24766, win 255, length 0
+08:34:14.546877 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:14.559360 ARP, Request who-has pm-server tell _gateway, length 46
+08:34:15.548608 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:15.561405 ARP, Request who-has pm-server tell _gateway, length 46
+08:34:15.669214 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 1965:2437, ack 24766, win 255, length 472
+08:34:15.677236 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 24766:27686, ack 2437, win 501, length 2920
+08:34:15.677259 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 27686:28862, ack 2437, win 501, length 1176
+08:34:15.677283 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 28862:31782, ack 2437, win 501, length 2920
+08:34:15.677621 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 31782:34702, ack 2437, win 501, length 2920
+08:34:15.677645 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 34702:37622, ack 2437, win 501, length 2920
+08:34:15.677887 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 37622:39082, ack 2437, win 501, length 1460
+08:34:15.678050 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 27686, win 256, length 0
+08:34:15.678068 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 39082:42002, ack 2437, win 501, length 2920
+08:34:15.678081 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 42002:44922, ack 2437, win 501, length 2920
+08:34:15.678733 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 36162, win 256, length 0
+08:34:15.678750 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 44922:47842, ack 2437, win 501, length 2920
+08:34:15.678762 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 47842:49195, ack 2437, win 501, length 1353
+08:34:15.679746 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 47842, win 245, length 0
+08:34:15.679787 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 47842, win 256, length 0
+08:34:15.715669 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 2437:2932, ack 49195, win 251, length 495
+08:34:15.716051 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 49195:49307, ack 2932, win 501, length 112
+08:34:15.719825 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 2932:3421, ack 49307, win 256, length 489
+08:34:15.720157 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 49307:49419, ack 3421, win 501, length 112
+08:34:15.720406 IP 192.168.100.6.62535 > prometheus.9090: Flags [P.], seq 1:509, ack 1, win 256, length 508
+08:34:15.720421 IP prometheus.9090 > 192.168.100.6.62535: Flags [.], ack 509, win 501, length 0
+08:34:15.720809 IP prometheus.9090 > 192.168.100.6.62535: Flags [P.], seq 1:113, ack 509, win 501, length 112
+08:34:15.721068 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 3421:3899, ack 49419, win 256, length 478
+08:34:15.721378 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 49419:49531, ack 3899, win 501, length 112
+08:34:15.918991 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 49531, win 255, length 0
+08:34:15.919862 IP 192.168.100.6.62535 > prometheus.9090: Flags [.], ack 113, win 256, length 0
+08:34:16.385267 IP6 localhost6.localdomain6.55520 > localhost6.localdomain6.9093: Flags [P.], seq 1:667, ack 1, win 512, options [nop,nop,TS val 1606333780 ecr 1606327606], length 666
+08:34:16.385736 IP6 localhost6.localdomain6.9093 > localhost6.localdomain6.55520: Flags [P.], seq 1:383, ack 667, win 512, options [nop,nop,TS val 1606333781 ecr 1606333780], length 382
+08:34:16.385751 IP6 localhost6.localdomain6.55520 > localhost6.localdomain6.9093: Flags [.], ack 383, win 510, options [nop,nop,TS val 1606333781 ecr 1606333781], length 0
+08:34:16.548919 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:16.559284 ARP, Request who-has pm-server tell _gateway, length 46
+08:34:16.566920 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 3899:4371, ack 49531, win 255, length 472
+08:34:16.575283 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 49531:52451, ack 4371, win 501, length 2920
+08:34:16.575304 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 52451:53627, ack 4371, win 501, length 1176
+08:34:16.575327 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 53627:56547, ack 4371, win 501, length 2920
+08:34:16.575558 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 56547:59467, ack 4371, win 501, length 2920
+08:34:16.575580 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 59467:62387, ack 4371, win 501, length 2920
+08:34:16.575711 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 62387:63847, ack 4371, win 501, length 1460
+08:34:16.575955 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 52451, win 256, length 0
+08:34:16.576046 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 63847:66767, ack 4371, win 501, length 2920
+08:34:16.576058 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 66767:69687, ack 4371, win 501, length 2920
+08:34:16.576782 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 60927, win 256, length 0
+08:34:16.576797 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 69687:72251, ack 4371, win 501, length 2564
+08:34:16.577816 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 72251, win 246, length 0
+08:34:16.577875 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 72251, win 256, length 0
+08:34:16.613818 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 4371:4866, ack 72251, win 256, length 495
+08:34:16.614098 IP 192.168.100.6.62534 > prometheus.9090: Flags [P.], seq 479:968, ack 113, win 256, length 489
+08:34:16.614292 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 72251:72363, ack 4866, win 501, length 112
+08:34:16.614523 IP 192.168.100.6.62535 > prometheus.9090: Flags [P.], seq 509:1017, ack 113, win 256, length 508
+08:34:16.614810 IP prometheus.9090 > 192.168.100.6.62534: Flags [P.], seq 113:225, ack 968, win 501, length 112
+08:34:16.615106 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 4866:5344, ack 72363, win 256, length 478
+08:34:16.615229 IP prometheus.9090 > 192.168.100.6.62535: Flags [P.], seq 113:225, ack 1017, win 501, length 112
+08:34:16.615583 IP 192.168.100.6.62536 > prometheus.9090: Flags [S], seq 65192225, win 8192, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+08:34:16.615608 IP prometheus.9090 > 192.168.100.6.62536: Flags [S.], seq 1663751393, ack 65192226, win 64240, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+08:34:16.615784 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 72363:72475, ack 5344, win 501, length 112
+08:34:16.615813 IP 192.168.100.6.62536 > prometheus.9090: Flags [.], ack 1, win 256, length 0
+08:34:16.815916 IP 192.168.100.6.62534 > prometheus.9090: Flags [.], ack 225, win 255, length 0
+08:34:16.815932 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 72475, win 255, length 0
+08:34:16.823951 IP 192.168.100.6.62535 > prometheus.9090: Flags [.], ack 225, win 255, length 0
+08:34:17.175019 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [P.], seq 726:968, ack 42533, win 512, options [nop,nop,TS val 1606334570 ecr 1606329718], length 242
+08:34:17.175041 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [.], ack 968, win 3075, options [nop,nop,TS val 1606334570 ecr 1606334570], length 0
+08:34:17.187197 IP localhost.localdomain.55694 > localhost.localdomain.ntp: NTPv4, Client, length 48
+08:34:17.187216 IP localhost.localdomain > localhost.localdomain: ICMP localhost.localdomain udp port ntp unreachable, length 84
+08:34:17.321343 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 42533:46629, ack 968, win 3075, options [nop,nop,TS val 1606334716 ecr 1606334570], length 4096
+08:34:17.321365 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 46629, win 493, options [nop,nop,TS val 1606334716 ecr 1606334716], length 0
+08:34:17.321643 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 46629:50725, ack 968, win 3075, options [nop,nop,TS val 1606334717 ecr 1606334716], length 4096
+08:34:17.321650 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 50725, win 493, options [nop,nop,TS val 1606334717 ecr 1606334717], length 0
+08:34:17.322048 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 50725:54821, ack 968, win 3075, options [nop,nop,TS val 1606334717 ecr 1606334717], length 4096
+08:34:17.322056 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 54821, win 493, options [nop,nop,TS val 1606334717 ecr 1606334717], length 0
+08:34:17.322483 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 54821:56706, ack 968, win 3075, options [nop,nop,TS val 1606334718 ecr 1606334717], length 1885
+08:34:17.322493 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 56706, win 502, options [nop,nop,TS val 1606334718 ecr 1606334718], length 0
+08:34:17.337059 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 5344:5816, ack 72475, win 255, length 472
+08:34:17.342758 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 72475:75395, ack 5816, win 501, length 2920
+08:34:17.342774 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 75395:76571, ack 5816, win 501, length 1176
+08:34:17.342792 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 76571:79491, ack 5816, win 501, length 2920
+08:34:17.342943 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 79491:82411, ack 5816, win 501, length 2920
+08:34:17.342955 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 82411:85331, ack 5816, win 501, length 2920
+08:34:17.343082 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 85331:86791, ack 5816, win 501, length 1460
+08:34:17.343462 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 75395, win 256, length 0
+08:34:17.343481 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 86791:89711, ack 5816, win 501, length 2920
+08:34:17.343497 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 89711:92631, ack 5816, win 501, length 2920
+08:34:17.343854 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 79491, win 256, length 0
+08:34:17.343869 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 92631:95195, ack 5816, win 501, length 2564
+08:34:17.344845 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 91171, win 245, length 0
+08:34:17.344888 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 91171, win 256, length 0
+08:34:17.345834 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 95195, win 256, length 0
+08:34:17.371862 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 5816:6311, ack 95195, win 256, length 495
+08:34:17.372124 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 95195:95307, ack 6311, win 501, length 112
+08:34:17.372889 IP 192.168.100.6.62534 > prometheus.9090: Flags [P.], seq 968:1457, ack 225, win 255, length 489
+08:34:17.373097 IP prometheus.9090 > 192.168.100.6.62534: Flags [P.], seq 225:337, ack 1457, win 501, length 112
+08:34:17.373565 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 6311:6819, ack 95307, win 256, length 508
+08:34:17.373759 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 95307:95419, ack 6819, win 501, length 112
+08:34:17.374962 IP 192.168.100.6.62535 > prometheus.9090: Flags [P.], seq 1017:1495, ack 225, win 255, length 478
+08:34:17.375145 IP prometheus.9090 > 192.168.100.6.62535: Flags [P.], seq 225:337, ack 1495, win 501, length 112
+08:34:17.507470 IP prometheus.42874 > 2g-agw.9100: Flags [P.], seq 717:956, ack 23727, win 501, options [nop,nop,TS val 2104954654 ecr 25925596], length 239
+08:34:17.529646 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 23727:26623, ack 956, win 2405, options [nop,nop,TS val 25930595 ecr 2104954654], length 2896
+08:34:17.529682 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 26623, win 496, options [nop,nop,TS val 2104954676 ecr 25930595], length 0
+08:34:17.529698 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 26623:27823, ack 956, win 2405, options [nop,nop,TS val 25930595 ecr 2104954654], length 1200
+08:34:17.529707 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 27823, win 489, options [nop,nop,TS val 2104954676 ecr 25930595], length 0
+08:34:17.529870 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 27823:30719, ack 956, win 2405, options [nop,nop,TS val 25930595 ecr 2104954676], length 2896
+08:34:17.529880 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 30719, win 496, options [nop,nop,TS val 2104954676 ecr 25930595], length 0
+08:34:17.529916 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 30719:31636, ack 956, win 2405, options [nop,nop,TS val 25930595 ecr 2104954676], length 917
+08:34:17.529923 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 31636, win 489, options [nop,nop,TS val 2104954676 ecr 25930595], length 0
+08:34:17.548720 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:17.566017 IP 192.168.100.6.62534 > prometheus.9090: Flags [.], ack 337, win 255, length 0
+08:34:17.574901 IP 192.168.100.6.62535 > prometheus.9090: Flags [.], ack 337, win 255, length 0
+08:34:17.575966 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 95419, win 255, length 0
+08:34:17.620423 IP 2g-agw.9115 > prometheus.39634: Flags [.], ack 1, win 501, options [nop,nop,TS val 25930685 ecr 2104939766], length 0
+08:34:17.620437 IP prometheus.39634 > 2g-agw.9115: Flags [.], ack 561, win 501, options [nop,nop,TS val 2104954767 ecr 25915685], length 0
+08:34:17.634607 IP prometheus.39634 > 2g-agw.9115: Flags [.], ack 561, win 501, options [nop,nop,TS val 2104954781 ecr 25915685], length 0
+08:34:17.634910 IP 2g-agw.9115 > prometheus.39634: Flags [.], ack 1, win 501, options [nop,nop,TS val 25930700 ecr 2104954767], length 0
+08:34:17.700572 ARP, Request who-has pm-server tell _gateway, length 46
+08:34:18.290278 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 6819:7291, ack 95419, win 255, length 472
+08:34:18.298104 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 95419:98339, ack 7291, win 501, length 2920
+08:34:18.298126 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 98339:99515, ack 7291, win 501, length 1176
+08:34:18.298149 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 99515:102435, ack 7291, win 501, length 2920
+08:34:18.298480 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 102435:105355, ack 7291, win 501, length 2920
+08:34:18.298503 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 105355:108275, ack 7291, win 501, length 2920
+08:34:18.298905 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 98339, win 256, length 0
+08:34:18.298928 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 108275:109735, ack 7291, win 501, length 1460
+08:34:18.298951 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 109735:112655, ack 7291, win 501, length 2920
+08:34:18.298963 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 112655:115575, ack 7291, win 501, length 2920
+08:34:18.299915 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 109735, win 245, length 0
+08:34:18.299932 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 115575:118139, ack 7291, win 501, length 2564
+08:34:18.299973 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 109735, win 256, length 0
+08:34:18.300918 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 118139, win 246, length 0
+08:34:18.300958 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 118139, win 256, length 0
+08:34:18.333436 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 7291:7786, ack 118139, win 256, length 495
+08:34:18.333744 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 118139:118251, ack 7786, win 501, length 112
+08:34:18.334198 IP 192.168.100.6.62536 > prometheus.9090: Flags [P.], seq 1:490, ack 1, win 256, length 489
+08:34:18.334217 IP prometheus.9090 > 192.168.100.6.62536: Flags [.], ack 490, win 501, length 0
+08:34:18.334626 IP prometheus.9090 > 192.168.100.6.62536: Flags [P.], seq 1:113, ack 490, win 501, length 112
+08:34:18.334698 IP 192.168.100.6.62534 > prometheus.9090: Flags [P.], seq 1457:1965, ack 337, win 255, length 508
+08:34:18.334968 IP prometheus.9090 > 192.168.100.6.62534: Flags [P.], seq 337:449, ack 1965, win 501, length 112
+08:34:18.335386 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 7786:8264, ack 118251, win 256, length 478
+08:34:18.335636 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 118251:118363, ack 8264, win 501, length 112
+08:34:18.488383 IP6 localhost6.localdomain6.54732 > localhost6.localdomain6.9090: Flags [P.], seq 243:486, ack 9647, win 512, options [nop,nop,TS val 1606335883 ecr 1606320893], length 243
+08:34:18.497667 IP6 localhost6.localdomain6.9090 > localhost6.localdomain6.54732: Flags [P.], seq 9647:13743, ack 486, win 3075, options [nop,nop,TS val 1606335893 ecr 1606335883], length 4096
+08:34:18.497686 IP6 localhost6.localdomain6.54732 > localhost6.localdomain6.9090: Flags [.], ack 13743, win 493, options [nop,nop,TS val 1606335893 ecr 1606335893], length 0
+08:34:18.497857 IP6 localhost6.localdomain6.9090 > localhost6.localdomain6.54732: Flags [P.], seq 13743:17839, ack 486, win 3075, options [nop,nop,TS val 1606335893 ecr 1606335893], length 4096
+08:34:18.497867 IP6 localhost6.localdomain6.54732 > localhost6.localdomain6.9090: Flags [.], ack 17839, win 473, options [nop,nop,TS val 1606335893 ecr 1606335893], length 0
+08:34:18.497954 IP6 localhost6.localdomain6.9090 > localhost6.localdomain6.54732: Flags [P.], seq 17839:19280, ack 486, win 3075, options [nop,nop,TS val 1606335893 ecr 1606335893], length 1441
+08:34:18.497962 IP6 localhost6.localdomain6.54732 > localhost6.localdomain6.9090: Flags [.], ack 19280, win 464, options [nop,nop,TS val 1606335893 ecr 1606335893], length 0
+08:34:18.537974 IP 192.168.100.6.62534 > prometheus.9090: Flags [.], ack 449, win 254, length 0
+08:34:18.537991 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 118363, win 255, length 0
+08:34:18.540126 IP 192.168.100.6.62536 > prometheus.9090: Flags [.], ack 113, win 256, length 0
+08:34:18.700050 ARP, Request who-has pm-server tell _gateway, length 46
+08:34:18.822109 IP 2g-agw.4957 > 192.168.100.255.4957: UDP, length 143
+08:34:18.914316 IP localhost.localdomain.9090 > localhost.localdomain.41500: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450770287 ecr 2450755184], length 0
+08:34:18.914323 IP localhost.localdomain.41500 > localhost.localdomain.9090: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450770287 ecr 2450755184], length 0
+08:34:18.914334 IP localhost.localdomain.41500 > localhost.localdomain.9090: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450770287 ecr 2450755184], length 0
+08:34:18.914339 IP localhost.localdomain.9090 > localhost.localdomain.41500: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450770287 ecr 2450755184], length 0
+08:34:19.426305 IP prometheus.58458 > 52.98.42.162.https: Flags [.], ack 1, win 501, length 0
+08:34:19.443803 IP 52.98.42.162.https > prometheus.58458: Flags [.], ack 1, win 2047, length 0
+08:34:19.576960 IP 2g-agw.9115 > prometheus.39632: Flags [.], ack 1, win 501, options [nop,nop,TS val 25932642 ecr 2104941723], length 0
+08:34:19.576976 IP prometheus.39632 > 2g-agw.9115: Flags [.], ack 561, win 501, options [nop,nop,TS val 2104956723 ecr 25917642], length 0
+08:34:19.682288 IP prometheus.39632 > 2g-agw.9115: Flags [.], ack 561, win 501, options [nop,nop,TS val 2104956828 ecr 25917642], length 0
+08:34:19.682485 IP 2g-agw.9115 > prometheus.39632: Flags [.], ack 1, win 501, options [nop,nop,TS val 25932748 ecr 2104956723], length 0
+08:34:19.699297 ARP, Request who-has pm-server tell _gateway, length 46
+08:34:20.549419 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:20.706304 IP localhost.localdomain.9115 > localhost.localdomain.55198: Flags [.], ack 1, win 1475, options [nop,nop,TS val 2450772079 ecr 2450756976], length 0
+08:34:20.706310 IP localhost.localdomain.55198 > localhost.localdomain.9115: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450772079 ecr 2450756976], length 0
+08:34:20.706333 IP localhost.localdomain.55198 > localhost.localdomain.9115: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450772079 ecr 2450756976], length 0
+08:34:20.706339 IP localhost.localdomain.9115 > localhost.localdomain.55198: Flags [.], ack 1, win 1475, options [nop,nop,TS val 2450772079 ecr 2450756976], length 0
+08:34:20.761429 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 8264:8736, ack 118363, win 255, length 472
+08:34:20.802298 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], ack 8736, win 501, length 0
+08:34:20.807201 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 118363:121283, ack 8736, win 501, length 2920
+08:34:20.807221 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 121283:122459, ack 8736, win 501, length 1176
+08:34:20.807245 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 122459:125379, ack 8736, win 501, length 2920
+08:34:20.807422 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 125379:128299, ack 8736, win 501, length 2920
+08:34:20.807439 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 128299:131219, ack 8736, win 501, length 2920
+08:34:20.807637 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 131219:132679, ack 8736, win 501, length 1460
+08:34:20.807936 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 121283, win 256, length 0
+08:34:20.807957 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 132679:135599, ack 8736, win 501, length 2920
+08:34:20.807968 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 135599:138519, ack 8736, win 501, length 2920
+08:34:20.809077 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 134139, win 245, length 0
+08:34:20.809094 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 138519:141083, ack 8736, win 501, length 2564
+08:34:20.809121 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 134139, win 256, length 0
+08:34:20.810064 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 141083, win 252, length 0
+08:34:20.834579 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 8736:9231, ack 141083, win 252, length 495
+08:34:20.834594 IP 192.168.100.6.62535 > prometheus.9090: Flags [P.], seq 1495:1984, ack 337, win 255, length 489
+08:34:20.835124 IP prometheus.9090 > 192.168.100.6.62535: Flags [P.], seq 337:449, ack 1984, win 501, length 112
+08:34:20.835205 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], ack 9231, win 501, length 0
+08:34:20.835462 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 141083:141195, ack 9231, win 501, length 112
+08:34:20.835609 IP 192.168.100.6.62536 > prometheus.9090: Flags [P.], seq 490:998, ack 113, win 256, length 508
+08:34:20.835873 IP prometheus.9090 > 192.168.100.6.62536: Flags [P.], seq 113:225, ack 998, win 501, length 112
+08:34:20.836386 IP 192.168.100.6.62534 > prometheus.9090: Flags [P.], seq 1965:2443, ack 449, win 254, length 478
+08:34:20.836655 IP prometheus.9090 > 192.168.100.6.62534: Flags [P.], seq 449:561, ack 2443, win 501, length 112
+08:34:21.036304 IP 192.168.100.6.62536 > prometheus.9090: Flags [.], ack 225, win 255, length 0
+08:34:21.037149 IP 192.168.100.6.62534 > prometheus.9090: Flags [.], ack 561, win 254, length 0
+08:34:21.037161 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 141195, win 251, length 0
+08:34:21.044173 IP 192.168.100.6.62535 > prometheus.9090: Flags [.], ack 449, win 254, length 0
+08:34:21.548896 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:21.737757 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 9231:9703, ack 141195, win 251, length 472
+08:34:21.745314 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 141195:144115, ack 9703, win 501, length 2920
+08:34:21.745336 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 144115:145291, ack 9703, win 501, length 1176
+08:34:21.745359 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 145291:148211, ack 9703, win 501, length 2920
+08:34:21.745520 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 148211:151131, ack 9703, win 501, length 2920
+08:34:21.745574 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 151131:154051, ack 9703, win 501, length 2920
+08:34:21.745842 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 154051:155511, ack 9703, win 501, length 1460
+08:34:21.746039 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 144115, win 256, length 0
+08:34:21.746058 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 155511:158431, ack 9703, win 501, length 2920
+08:34:21.746072 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 158431:161351, ack 9703, win 501, length 2920
+08:34:21.747146 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 156971, win 245, length 0
+08:34:21.747163 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 161351:163915, ack 9703, win 501, length 2564
+08:34:21.747173 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 156971, win 256, length 0
+08:34:21.748133 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 163915, win 252, length 0
+08:34:21.780333 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 9703:10198, ack 163915, win 252, length 495
+08:34:21.780700 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 163915:164027, ack 10198, win 501, length 112
+08:34:21.780913 IP 192.168.100.6.62535 > prometheus.9090: Flags [P.], seq 1984:2473, ack 449, win 254, length 489
+08:34:21.781369 IP prometheus.9090 > 192.168.100.6.62535: Flags [P.], seq 449:561, ack 2473, win 501, length 112
+08:34:21.782634 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 10198:10706, ack 164027, win 251, length 508
+08:34:21.782922 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 164027:164139, ack 10706, win 501, length 112
+08:34:21.785716 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 10706:11184, ack 164139, win 251, length 478
+08:34:21.786016 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 164139:164251, ack 11184, win 501, length 112
+08:34:21.980307 IP 192.168.100.6.62535 > prometheus.9090: Flags [.], ack 561, win 254, length 0
+08:34:21.987156 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 164251, win 251, length 0
+08:34:22.175154 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [P.], seq 968:1210, ack 56706, win 512, options [nop,nop,TS val 1606339570 ecr 1606334718], length 242
+08:34:22.175176 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [.], ack 1210, win 3075, options [nop,nop,TS val 1606339570 ecr 1606339570], length 0
+08:34:22.186607 IP localhost.localdomain.52435 > localhost.localdomain.ntp: NTPv4, Client, length 48
+08:34:22.186624 IP localhost.localdomain > localhost.localdomain: ICMP localhost.localdomain udp port ntp unreachable, length 84
+08:34:22.319783 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 56706:60802, ack 1210, win 3075, options [nop,nop,TS val 1606339715 ecr 1606339570], length 4096
+08:34:22.319805 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 60802, win 493, options [nop,nop,TS val 1606339715 ecr 1606339715], length 0
+08:34:22.320162 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 60802:64898, ack 1210, win 3075, options [nop,nop,TS val 1606339715 ecr 1606339715], length 4096
+08:34:22.320169 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 64898, win 493, options [nop,nop,TS val 1606339715 ecr 1606339715], length 0
+08:34:22.320580 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 64898:68994, ack 1210, win 3075, options [nop,nop,TS val 1606339716 ecr 1606339715], length 4096
+08:34:22.320587 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 68994, win 493, options [nop,nop,TS val 1606339716 ecr 1606339716], length 0
+08:34:22.320957 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 68994:70883, ack 1210, win 3075, options [nop,nop,TS val 1606339716 ecr 1606339716], length 1889
+08:34:22.320963 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 70883, win 502, options [nop,nop,TS val 1606339716 ecr 1606339716], length 0
+08:34:22.507361 IP prometheus.42874 > 2g-agw.9100: Flags [P.], seq 956:1195, ack 31636, win 501, options [nop,nop,TS val 2104959653 ecr 25930595], length 239
+08:34:22.527805 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 31636:34532, ack 1195, win 2405, options [nop,nop,TS val 25935593 ecr 2104959653], length 2896
+08:34:22.527836 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 34532, win 496, options [nop,nop,TS val 2104959674 ecr 25935593], length 0
+08:34:22.527851 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 34532:35732, ack 1195, win 2405, options [nop,nop,TS val 25935593 ecr 2104959653], length 1200
+08:34:22.527860 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 35732, win 489, options [nop,nop,TS val 2104959674 ecr 25935593], length 0
+08:34:22.527938 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 35732:38628, ack 1195, win 2405, options [nop,nop,TS val 25935593 ecr 2104959674], length 2896
+08:34:22.527948 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 38628, win 474, options [nop,nop,TS val 2104959674 ecr 25935593], length 0
+08:34:22.527957 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 38628:39539, ack 1195, win 2405, options [nop,nop,TS val 25935593 ecr 2104959674], length 911
+08:34:22.527962 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 39539, win 467, options [nop,nop,TS val 2104959674 ecr 25935593], length 0
+08:34:22.548592 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:22.697204 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 11184:11656, ack 164251, win 251, length 472
+08:34:22.705199 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 164251:167171, ack 11656, win 501, length 2920
+08:34:22.705228 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 167171:168347, ack 11656, win 501, length 1176
+08:34:22.705261 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 168347:171267, ack 11656, win 501, length 2920
+08:34:22.705581 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 171267:174187, ack 11656, win 501, length 2920
+08:34:22.705603 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 174187:177107, ack 11656, win 501, length 2920
+08:34:22.705853 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 177107:178567, ack 11656, win 501, length 1460
+08:34:22.705997 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 167171, win 256, length 0
+08:34:22.706015 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 178567:181487, ack 11656, win 501, length 2920
+08:34:22.706026 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], seq 181487:184407, ack 11656, win 501, length 2920
+08:34:22.707205 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 181487, win 239, length 0
+08:34:22.707222 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 184407:186971, ack 11656, win 501, length 2564
+08:34:22.708195 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 186971, win 218, length 0
+08:34:22.708718 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 186971, win 256, length 0
+08:34:22.739075 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 11656:12151, ack 186971, win 256, length 495
+08:34:22.739475 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 186971:187083, ack 12151, win 501, length 112
+08:34:22.739601 IP 192.168.100.6.62536 > prometheus.9090: Flags [P.], seq 998:1487, ack 225, win 255, length 489
+08:34:22.739927 IP prometheus.9090 > 192.168.100.6.62536: Flags [P.], seq 225:337, ack 1487, win 501, length 112
+08:34:22.740743 IP 192.168.100.6.62533 > prometheus.9090: Flags [P.], seq 12151:12659, ack 187083, win 256, length 508
+08:34:22.741012 IP prometheus.9090 > 192.168.100.6.62533: Flags [P.], seq 187083:187195, ack 12659, win 501, length 112
+08:34:22.741275 IP 192.168.100.6.62534 > prometheus.9090: Flags [P.], seq 2443:2921, ack 561, win 254, length 478
+08:34:22.741653 IP prometheus.9090 > 192.168.100.6.62534: Flags [P.], seq 561:673, ack 2921, win 501, length 112
+08:34:22.936480 IP 192.168.100.6.62536 > prometheus.9090: Flags [.], ack 337, win 255, length 0
+08:34:22.936499 IP 192.168.100.6.62534 > prometheus.9090: Flags [.], ack 673, win 254, length 0
+08:34:22.936503 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], ack 187195, win 255, length 0
+08:34:23.759020 ARP, Request who-has core tell 192.168.100.30, length 46
+08:34:24.759559 ARP, Request who-has core tell 192.168.100.30, length 46
+08:34:25.759388 ARP, Request who-has core tell 192.168.100.30, length 46
+08:34:26.551161 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:27.175324 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [P.], seq 1210:1452, ack 70883, win 512, options [nop,nop,TS val 1606344570 ecr 1606339716], length 242
+08:34:27.175360 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [.], ack 1452, win 3075, options [nop,nop,TS val 1606344570 ecr 1606344570], length 0
+08:34:27.186033 IP localhost.localdomain.40884 > localhost.localdomain.ntp: NTPv4, Client, length 48
+08:34:27.186052 IP localhost.localdomain > localhost.localdomain: ICMP localhost.localdomain udp port ntp unreachable, length 84
+08:34:27.320448 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 70883:74979, ack 1452, win 3075, options [nop,nop,TS val 1606344715 ecr 1606344570], length 4096
+08:34:27.320468 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 74979, win 493, options [nop,nop,TS val 1606344715 ecr 1606344715], length 0
+08:34:27.320736 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 74979:79075, ack 1452, win 3075, options [nop,nop,TS val 1606344716 ecr 1606344715], length 4096
+08:34:27.320743 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 79075, win 493, options [nop,nop,TS val 1606344716 ecr 1606344716], length 0
+08:34:27.321144 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 79075:83171, ack 1452, win 3075, options [nop,nop,TS val 1606344716 ecr 1606344716], length 4096
+08:34:27.321151 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 83171, win 493, options [nop,nop,TS val 1606344716 ecr 1606344716], length 0
+08:34:27.321644 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 83171:85073, ack 1452, win 3075, options [nop,nop,TS val 1606344716 ecr 1606344716], length 1902
+08:34:27.321650 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 85073, win 502, options [nop,nop,TS val 1606344716 ecr 1606344716], length 0
+08:34:27.507315 IP prometheus.42874 > 2g-agw.9100: Flags [P.], seq 1195:1434, ack 39539, win 501, options [nop,nop,TS val 2104964653 ecr 25935593], length 239
+08:34:27.527000 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 39539:42435, ack 1434, win 2405, options [nop,nop,TS val 25940592 ecr 2104964653], length 2896
+08:34:27.527044 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 42435, win 496, options [nop,nop,TS val 2104964673 ecr 25940592], length 0
+08:34:27.527065 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 42435:43635, ack 1434, win 2405, options [nop,nop,TS val 25940592 ecr 2104964653], length 1200
+08:34:27.527080 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 43635, win 489, options [nop,nop,TS val 2104964673 ecr 25940592], length 0
+08:34:27.527189 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 43635:46531, ack 1434, win 2405, options [nop,nop,TS val 25940592 ecr 2104964673], length 2896
+08:34:27.527202 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 46531, win 474, options [nop,nop,TS val 2104964673 ecr 25940592], length 0
+08:34:27.527237 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 46531:47455, ack 1434, win 2405, options [nop,nop,TS val 25940592 ecr 2104964673], length 924
+08:34:27.527256 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 47455, win 467, options [nop,nop,TS val 2104964673 ecr 25940592], length 0
+08:34:27.551607 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:27.874378 IP6 localhost6.localdomain6.9091 > localhost6.localdomain6.43340: Flags [.], ack 1, win 1232, options [nop,nop,TS val 1606345269 ecr 1606330166], length 0
+08:34:27.874386 IP6 localhost6.localdomain6.43340 > localhost6.localdomain6.9091: Flags [.], ack 1, win 512, options [nop,nop,TS val 1606345269 ecr 1606330166], length 0
+08:34:27.874400 IP6 localhost6.localdomain6.43340 > localhost6.localdomain6.9091: Flags [.], ack 1, win 512, options [nop,nop,TS val 1606345269 ecr 1606330166], length 0
+08:34:27.874405 IP6 localhost6.localdomain6.9091 > localhost6.localdomain6.43340: Flags [.], ack 1, win 1232, options [nop,nop,TS val 1606345269 ecr 1606330166], length 0
+08:34:28.551261 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:28.823075 IP 2g-agw.4957 > 192.168.100.255.4957: UDP, length 143
+08:34:30.760024 ARP, Request who-has core tell 192.168.100.30, length 46
+08:34:31.458298 IP6 localhost6.localdomain6.55520 > localhost6.localdomain6.9093: Flags [.], ack 383, win 512, options [nop,nop,TS val 1606348853 ecr 1606333781], length 0
+08:34:31.458304 IP6 localhost6.localdomain6.9093 > localhost6.localdomain6.55520: Flags [.], ack 667, win 512, options [nop,nop,TS val 1606348853 ecr 1606333781], length 0
+08:34:31.458341 IP6 localhost6.localdomain6.9093 > localhost6.localdomain6.55520: Flags [.], ack 667, win 512, options [nop,nop,TS val 1606348853 ecr 1606333781], length 0
+08:34:31.458346 IP6 localhost6.localdomain6.55520 > localhost6.localdomain6.9093: Flags [.], ack 383, win 512, options [nop,nop,TS val 1606348853 ecr 1606333781], length 0
+08:34:31.760004 ARP, Request who-has core tell 192.168.100.30, length 46
+08:34:31.775955 IP 192.168.100.6.62535 > prometheus.9090: Flags [.], seq 2472:2473, ack 561, win 254, length 1
+08:34:31.775977 IP prometheus.9090 > 192.168.100.6.62535: Flags [.], ack 2473, win 501, options [nop,nop,sack 1 {2472:2473}], length 0
+08:34:32.175205 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [P.], seq 1452:1694, ack 85073, win 512, options [nop,nop,TS val 1606349570 ecr 1606344716], length 242
+08:34:32.175229 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [.], ack 1694, win 3075, options [nop,nop,TS val 1606349570 ecr 1606349570], length 0
+08:34:32.183679 IP localhost.localdomain.37084 > localhost.localdomain.ntp: NTPv4, Client, length 48
+08:34:32.183698 IP localhost.localdomain > localhost.localdomain: ICMP localhost.localdomain udp port ntp unreachable, length 84
+08:34:32.324345 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 85073:89169, ack 1694, win 3075, options [nop,nop,TS val 1606349719 ecr 1606349570], length 4096
+08:34:32.324366 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 89169, win 493, options [nop,nop,TS val 1606349719 ecr 1606349719], length 0
+08:34:32.324657 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 89169:93265, ack 1694, win 3075, options [nop,nop,TS val 1606349719 ecr 1606349719], length 4096
+08:34:32.324664 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 93265, win 493, options [nop,nop,TS val 1606349719 ecr 1606349719], length 0
+08:34:32.325086 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 93265:97361, ack 1694, win 3075, options [nop,nop,TS val 1606349720 ecr 1606349719], length 4096
+08:34:32.325093 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 97361, win 493, options [nop,nop,TS val 1606349720 ecr 1606349720], length 0
+08:34:32.325536 IP6 localhost6.localdomain6.9100 > localhost6.localdomain6.60682: Flags [P.], seq 97361:99261, ack 1694, win 3075, options [nop,nop,TS val 1606349720 ecr 1606349720], length 1900
+08:34:32.325542 IP6 localhost6.localdomain6.60682 > localhost6.localdomain6.9100: Flags [.], ack 99261, win 502, options [nop,nop,TS val 1606349720 ecr 1606349720], length 0
+08:34:32.507334 IP prometheus.42874 > 2g-agw.9100: Flags [P.], seq 1434:1673, ack 47455, win 501, options [nop,nop,TS val 2104969653 ecr 25940592], length 239
+08:34:32.528094 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 47455:50351, ack 1673, win 2405, options [nop,nop,TS val 25945593 ecr 2104969653], length 2896
+08:34:32.528131 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 50351, win 496, options [nop,nop,TS val 2104969674 ecr 25945593], length 0
+08:34:32.528145 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 50351:51551, ack 1673, win 2405, options [nop,nop,TS val 25945593 ecr 2104969653], length 1200
+08:34:32.528154 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 51551, win 489, options [nop,nop,TS val 2104969674 ecr 25945593], length 0
+08:34:32.528288 IP 2g-agw.9100 > prometheus.42874: Flags [.], seq 51551:54447, ack 1673, win 2405, options [nop,nop,TS val 25945593 ecr 2104969674], length 2896
+08:34:32.528309 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 54447, win 496, options [nop,nop,TS val 2104969674 ecr 25945593], length 0
+08:34:32.528320 IP 2g-agw.9100 > prometheus.42874: Flags [P.], seq 54447:55383, ack 1673, win 2405, options [nop,nop,TS val 25945593 ecr 2104969674], length 936
+08:34:32.528326 IP prometheus.42874 > 2g-agw.9100: Flags [.], ack 55383, win 489, options [nop,nop,TS val 2104969674 ecr 25945593], length 0
+08:34:32.620923 IP 2g-agw.9115 > prometheus.39634: Flags [.], ack 1, win 501, options [nop,nop,TS val 25945686 ecr 2104954767], length 0
+08:34:32.620943 IP prometheus.39634 > 2g-agw.9115: Flags [.], ack 561, win 501, options [nop,nop,TS val 2104969767 ecr 25930700], length 0
+08:34:32.738312 IP prometheus.39634 > 2g-agw.9115: Flags [.], ack 561, win 501, options [nop,nop,TS val 2104969884 ecr 25930700], length 0
+08:34:32.738673 IP 2g-agw.9115 > prometheus.39634: Flags [.], ack 1, win 501, options [nop,nop,TS val 25945804 ecr 2104969767], length 0
+08:34:32.743120 IP 192.168.100.6.62534 > prometheus.9090: Flags [.], seq 2920:2921, ack 673, win 254, length 1
+08:34:32.743137 IP prometheus.9090 > 192.168.100.6.62534: Flags [.], ack 2921, win 501, options [nop,nop,sack 1 {2920:2921}], length 0
+08:34:32.743156 IP 192.168.100.6.62536 > prometheus.9090: Flags [.], seq 1486:1487, ack 337, win 255, length 1
+08:34:32.743167 IP prometheus.9090 > 192.168.100.6.62536: Flags [.], ack 1487, win 501, options [nop,nop,sack 1 {1486:1487}], length 0
+08:34:32.743176 IP 192.168.100.6.62533 > prometheus.9090: Flags [.], seq 12658:12659, ack 187195, win 255, length 1
+08:34:32.743185 IP prometheus.9090 > 192.168.100.6.62533: Flags [.], ack 12659, win 501, options [nop,nop,sack 1 {12658:12659}], length 0
+08:34:32.760452 ARP, Request who-has core tell 192.168.100.30, length 46
+08:34:32.878296 IP prometheus.60430 > golem.canonical.com.ntp: NTPv4, Client, length 48
+08:34:33.056184 IP golem.canonical.com.ntp > prometheus.60430: NTPv4, Server, length 48
+08:34:33.122748 IP localhost.localdomain.60854 > localhost.domain: 47346+ [1au] PTR? 199.89.189.91.in-addr.arpa. (55)
+08:34:33.123231 IP prometheus.36975 > dns.google.domain: 41624+ [1au] PTR? 199.89.189.91.in-addr.arpa. (55)
+08:34:33.384839 IP dns.google.domain > prometheus.36975: 41624 1/3/1 PTR golem.canonical.com. (142)
+08:34:33.385204 IP localhost.domain > localhost.localdomain.60854: 47346 1/0/1 PTR golem.canonical.com. (88)
+08:34:33.488660 IP6 localhost6.localdomain6.54732 > localhost6.localdomain6.9090: Flags [P.], seq 486:729, ack 19280, win 512, options [nop,nop,TS val 1606350883 ecr 1606335893], length 243
+08:34:33.497849 IP6 localhost6.localdomain6.9090 > localhost6.localdomain6.54732: Flags [P.], seq 19280:23376, ack 729, win 3075, options [nop,nop,TS val 1606350893 ecr 1606350883], length 4096
+08:34:33.497869 IP6 localhost6.localdomain6.54732 > localhost6.localdomain6.9090: Flags [.], ack 23376, win 493, options [nop,nop,TS val 1606350893 ecr 1606350893], length 0
+08:34:33.498040 IP6 localhost6.localdomain6.9090 > localhost6.localdomain6.54732: Flags [P.], seq 23376:27472, ack 729, win 3075, options [nop,nop,TS val 1606350893 ecr 1606350893], length 4096
+08:34:33.498051 IP6 localhost6.localdomain6.54732 > localhost6.localdomain6.9090: Flags [.], ack 27472, win 473, options [nop,nop,TS val 1606350893 ecr 1606350893], length 0
+08:34:33.498151 IP6 localhost6.localdomain6.9090 > localhost6.localdomain6.54732: Flags [P.], seq 27472:28900, ack 729, win 3075, options [nop,nop,TS val 1606350893 ecr 1606350893], length 1428
+08:34:33.498250 IP6 localhost6.localdomain6.54732 > localhost6.localdomain6.9090: Flags [.], ack 28900, win 464, options [nop,nop,TS val 1606350893 ecr 1606350893], length 0
+08:34:34.018478 IP localhost.localdomain.41500 > localhost.localdomain.9090: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450785391 ecr 2450770287], length 0
+08:34:34.018483 IP localhost.localdomain.9090 > localhost.localdomain.41500: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450785391 ecr 2450770287], length 0
+08:34:34.018496 IP localhost.localdomain.9090 > localhost.localdomain.41500: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450785391 ecr 2450770287], length 0
+08:34:34.018501 IP localhost.localdomain.41500 > localhost.localdomain.9090: Flags [.], ack 1, win 512, options [nop,nop,TS val 2450785391 ecr 2450770287], length 0
+08:34:34.530436 IP prometheus.58458 > 52.98.42.162.https: Flags [.], ack 1, win 501, length 0
+08:34:34.548018 IP 52.98.42.162.https > prometheus.58458: Flags [.], ack 1, win 2047, length 0
+08:34:34.552706 ARP, Request who-has 192.168.100.28 tell 192.168.100.33, length 46
+08:34:34.576824 IP 2g-agw.9115 > prometheus.39632: Flags [.], ack 1, win 501, options [nop,nop,TS val 25947642 ecr 2104956723], length 0
+08:34:34.576838 IP prometheus.39632 > 2g-agw.9115: Flags [.], ack 561, win 501, options [nop,nop,TS val 2104971722 ecr 25932748], length 0
+08:34:34.786308 IP prometheus.39632 > 2g-agw.9115: Flags [.], ack 561, win 501, options [nop,nop,TS val 2104971932 ecr 25932748], length 0
+08:34:34.786653 IP 2g-agw.9115 > prometheus.39632: Flags [.], ack 1, win 501, options [nop,nop,TS val 25947851 ecr 2104971722], length 0
+

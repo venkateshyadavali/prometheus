@@ -1,0 +1,2 @@
+connectors:
+  - high_priority_MSteams_channel: "https://outlook.office.com/webhook/57333b53-f777-4e7f-93fe-83f27fe289ae@7107009f-dccf-4349-8e1b-b1513556e5c5/IncomingWebhook/8b657a13284548c2ae0b07594b10d0e5/8fdfc2d8-75eb-4b1d-8ab4-c4867101eaf2"

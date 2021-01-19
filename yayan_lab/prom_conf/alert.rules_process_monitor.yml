@@ -1,0 +1,27 @@
+#Alert Rules validated on aws node with ubuntu 18.04 OS
+
+groups:
+- name: services-processes-2g-agw
+  rules:
+
+# Alert when any of the agw services defined to run under system V init are not running for 1min
+  - alert: ServiceDown
+    expr: service_status{exported_instance="2g-agw",exported_job="service",job="pushgateway",node="2g-agw"} == 0
+    for: 1m
+    labels:
+      severity: critical
+#      severity: page / critical / warning / info
+    annotations:
+      summary: "Jakarta-Lab: Process {{ $labels.process }} under the service {{ $labels.service }} is down"
+      description: "Process \"{{ $labels.process }}\" under the service {{ $labels.service }} on node {{ $labels.node }} has been down for more than 1 minute."
+
+## Alert for any instance that is unreachable for >5 minutes.
+#  - alert: ProcessDown
+#    expr: process_status{exported_instance="2g-agw",exported_job="ps",job="pushgateway",node="2g-agw"} == 0
+#    for: 1m
+#    labels:
+#      severity: critical
+#    annotations:
+#      summary: "Process {{ $labels.process }} down"
+#      description: "{{ $labels.process }} on node {{ $labels.node }} has been down for more than 1 minute."
+
